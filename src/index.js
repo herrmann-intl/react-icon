@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles.css'
 import _ from 'lodash'
 /*
   Adds the provided svg document to the page as an icon. The css class ".icon"
