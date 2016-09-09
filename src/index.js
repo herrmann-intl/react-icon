@@ -12,7 +12,7 @@ export default class Icon extends React.Component {
     let style = this.props.style || {}
     style = _.merge({height: "1em", width: "1em", fontSize: this.props.fontSize})
 
-    let iconElement = <use xlinkHref={this.this.props.icon}></use>
+    let iconElement = <use xlinkHref={this.props.icon}></use>
     if(this.props.iconComponent){
       iconElement = React.createElement(this.props.iconComponent, {xlinkHref: this.props.xlinkHref})
     }
