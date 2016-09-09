@@ -14,7 +14,7 @@ export default class Icon extends React.Component {
 
     let iconElement = <use xlinkHref={this.props.icon}></use>
     if(this.props.iconComponent){
-      iconElement = React.createElement(this.props.iconComponent, {xlinkHref: this.props.xlinkHref})
+      iconElement = React.createElement(this.props.iconComponent, {xlinkHref: this.props.icon})
     }
 
     return (
