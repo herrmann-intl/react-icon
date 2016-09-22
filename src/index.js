@@ -18,7 +18,7 @@ export default class Icon extends React.Component {
     }
 
     return (
-      <span className={this.props.className}>
+      <span {..._.omit(this.props, "icon", "iconComponent", "fontSize")}>
         <svg viewBox="0 0 100 100" width="100%" height="100%" style={style}>
           {iconElement}
         </svg>
